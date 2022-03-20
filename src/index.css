@@ -1,13 +1,387 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    letter-spacing: 2px;
+    background-color: rgb(233, 233, 233);
+}
+.topnav{
+    text-align: right;
+    padding: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+.container{
+    height: 100vh;
+
+    background-color: red;
+    background-repeat: no-repeat;
+}
+
+.container a{
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+    margin-left:40px;
+}
+#profile{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+}
+#profileImg{
+    height: 50px;
+    width: 50px;
+}
+
+
+#name{ 
+    float: left;
+    margin-left: 20%;
+    color: rgb(8, 8, 8);
+}
+#name2{
+    float: left;
+    margin-left: 0px;
+    color: #ffca58;
+}
+
+
+.topnav a:hover{
+    color:lightskyblue;
+}
+#Logo{
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+#notesh2{
+    margin-left: 400px;
+    margin-top: 200px;
+}
+
+#abutton{
+    position: absolute;
+    top: 450px;
+    left:360px;
+    text-decoration: none;
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+    display: block;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #ffca58;
+}
+
+#notedescription{
+    position: absolute;
+    top: 330px;
+    left: 240px;
+}
+
+
+.copyright{
+    position: absolute;
+    top: 93vh;
+    left: 40%;
+    
+}
+
+/* .onloadanimation{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+
+}
+#pro{
+    background-color:black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: -110px;
+}
+span{
+    float: left;
+    display: block;
+    height: 100px;
+    width:20px;
+    background-color:#ffca58;
+    border-radius: 20px;
+
+}
+#one{
+    position: absolute;
+    left: -50px; 
+    top:-50px;
+    
+}
+#two{
+    position: absolute;
+    left: -50px; 
+    top:-50px;
+    animation: n2 5s 2  ease-in-out;
+
+}
+
+#three{
+    position: absolute;
+    left: -50px;
+    top:-50px;
+    animation: n3 5s 2  ease-in-out;
+
+}
+@keyframes n2 {
+    0%{
+        height: 100px;
+    }
+    10%{
+
+        transform:translateX(0px);
+
+    }
+    20%{
+        transform-origin: top center;
+        transform: rotate(-35deg) translateX(-5px);
+        height: 110px;
+
+    }
+    30%{
+        transform-origin: top center;
+        transform: rotate(-35deg) translateX(-5px);
+        height: 110px;
+
+    }
+    50%{
+        transform-origin: top center;
+        transform: rotate(-35deg) translateX(-5px);
+        height: 110px;
+    }
+    60%{
+        transform-origin: top center;
+        transform: rotate(-35deg) translateX(-5px);
+        height: 110px;
+    }
+    70%{
+        transform-origin: top center;
+        transform: rotate(-35deg) translateX(-5px);
+        height: 110px;
+    }
+    100%{
+        transform-origin: top center;
+    }
+}
+
+@keyframes n3 {
+    0%{
+        height: 100px;
+    }
+    10%{
+
+        transform:translateX(0px);
+
+    }
+    20%{
+        transform-origin: top center;
+        transform: rotate(-35deg) translateX(-5px);
+        height: 110px;
+
+    }
+    30%{
+        transform-origin: top center;
+        transform: rotate(-35deg) translateX(-5px);
+        height: 110px;
+
+    }
+    50%{
+        transform: rotate(0deg) translateX(57px);
+        height: 100px;
+    }
+    60%{
+
+        transform: rotate(0deg) translateX(57px);
+        height: 100px;
+    }
+    70%{
+        transform-origin: top center;
+        transform: rotate(-35deg) translateX(-5px);
+        height: 110px;
+    }
+    100%{
+        transform-origin: top center;
+    }
+    
+} */
+
+/* @media only screen and (min-width: 428px ) and (max-width:600px){   
+    .container{
+        background-image: url(img/mobileview.png);
+        height: 100vh;
+        
+    }
+    body{
+        background-color: rgb(233, 233, 233);
+    }
+    #name{ 
+        margin-left: 10px;
+    }
+
+    .copyright{
+    top: 90vh;
+    left: 200px;
+    }
+    #notedescription{
+        width: 300px;
+        left: 120px;
+        top:300px;
+    }
+    #notesh2{
+        margin-left:150px;
+        margin-top: 160px;
+    }
+    #Logo{
+        width: 100px;
+        top: 230px;
+        right: 30px;
+    }
+    #abutton{
+        left:160px;
+        padding: 10px;
+        height: 30px;
+        
+    }
+    #contact{
+        margin-right: 10px;
+    }
+    
+    .topnav a{
+        margin-left:25px;
+    }
+    #home{
+        color:white;
+    }
+
+}
+
+  
+@media only screen and (min-width: 600px ) and (max-width:800px) {   
+    .container{
+        height: 100vh;
+    }
+    body{
+        background-color: rgb(233, 233, 233);
+    }
+    #name{ 
+        margin-left: 10px;
+    }
+
+    .copyright{
+    top: 90vh;
+    left: 200px;
+    }
+    #notedescription{
+        width: 300px;
+        left: 120px;
+        top:300px;
+    }
+    #notesh2{
+        margin-left:150px;
+        margin-top: 160px;
+    }
+    #Logo{
+        width: 200px;
+        top: 230px;
+        right: 150px;
+    }
+    #abutton{
+        left:160px;
+        padding: 10px;
+        height: 30px;
+        
+    }
+    #contact{
+        margin-right: 10px;
+    }
+    
+    .topnav a{
+        margin-left:25px;
+    }
+    #home{
+        color: #ffca58;
+    }
+
+}
+
+
+@media only screen and (min-width:200px) and (max-width:430px){
+    .container{
+        height: 100vh;
+        
+    }
+    body{
+        background-color:rgb(233, 233, 233);
+    }
+    #name{ 
+        margin-left: 10px;
+    }
+
+    .copyright{
+    top: 90vh;
+    left: 100px;
+    }
+    #notedescription{
+        width: 300px;
+        left: 80px;
+        top:300px;
+    }
+    #notesh2{
+        margin-left:150px;
+        margin-top: 160px;
+    }
+    #Logo{
+        width: 100px;
+        top: 210px;
+        right: 50px;
+    }
+    #abutton{
+        left:100px;
+        padding: 10px;
+        height: 30px;
+        
+    }
+    #contact{
+        margin-right: 10px;
+    }
+    
+    .topnav a{
+        margin-left:25px;
+    }
+    #home{
+        color:#ffca58;
+    }
+    #contact{
+        color: #ffca58;
+    }
+
+
+} */
