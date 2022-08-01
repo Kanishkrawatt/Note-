@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/loginpage.css"
 import user from "./img/user.png"
-import Axios from "axios";
+// import Axios from "axios";
 
 
 function Login(){
@@ -9,27 +9,27 @@ function Login(){
     function change(){
         changeState(!state);
     }
-    function postdata(){
-        document.getElementById("button").style.backgroundColor = "yellow";
-        setTimeout(()=>{
-            document.getElementById("button").style.backgroundColor = "white";
-        }, 100);
+    // function postdata(){
+    //     document.getElementById("button").style.backgroundColor = "yellow";
+    //     setTimeout(()=>{
+    //         document.getElementById("button").style.backgroundColor = "white";
+    //     }, 100);
         
-        const username = document.getElementById("username").value;
-        const Password = document.getElementById("password").value;
-        var Email;
-        state? Email = document.getElementById("Email").value:Email =" ";
+    //     const username = document.getElementById("username").value;
+    //     const Password = document.getElementById("password").value;
+    //     var Email;
+    //     state? Email = document.getElementById("Email").value:Email =" ";
 
-        const Type = state ? "Sign up":"Login";
-        Axios.post("http://localhost:3001/logininfo",{
-            Username: username,
-            Password: Password,
-            Email: Email,
-            Type: Type,
-        }).then(Response=>{
-            console.log(Response);
-        });
-    }
+    //     const Type = state ? "Sign up":"Login";
+    //     Axios.post("http://localhost:3001/logininfo",{
+    //         Username: username,
+    //         Password: Password,
+    //         Email: Email,
+    //         Type: Type,
+    //     }).then(Response=>{
+    //         console.log(Response);
+    //     });
+    // }
     return(
         <>
             <div className="parent">
@@ -38,8 +38,8 @@ function Login(){
                 {state && <input type={Text} id="Email" placeholder="Email"/>}
                 <input type={Text} id ="username" placeholder="Username"/>
                 <input type="Password" id = "password" placeholder="Password" />
-                <button type="button" onClick={postdata} id="button">{state ? "Sign up":"Login"}</button>
-                <a onClick={change} > {state ? "Already have account .":"Create account" }</a>
+                <button type="button" /*onClick={postdata}*/ id="button">{state ? "Sign up":"Login"}</button>
+                <p onClick={change} > {state ? "Already have account .":"Create account" }</p>
             </div>
             </div>
         </>
