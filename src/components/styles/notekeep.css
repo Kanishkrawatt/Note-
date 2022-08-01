@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins:ital,wght@1,300&display=swap');/* font-family: 'Montserrat', sans-serif; */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    float:left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+#english{
+    padding-left: 100px;
+    font-weight: bold;
+}
+#hindi{
+    font-weight: lighter;
+    letter-spacing: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+#search{
+    position: absolute;
+    left: 500px;
+    top: 30px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 50px;
+    border:1px solid black
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+#options{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+
+}
+
+
+span
+{position: relative;
+display: block;
+width: 40px;
+height: 5px;
+margin-bottom: 8px;
+border-radius: 4px;
+background-color: black;
+z-index: 3;
+transition: transform 0.25s ;
+}
+button{
+    background-color:rgba(245, 222, 179, 0);
+    border: 0px;
+    z-index: 2;
+}
+.menubar{
+    background-image: linear-gradient(to top, rgba(255,0,0,0),rgba(0, 183, 255, 0.596));
+    display: none;
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    right: 0px;
+    font-size: 30px;
+    top: 0;
+    z-index: 1;
+
+}
+#userimg{
+    margin-top: 30%;
+    margin-left: 25%;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+#img1{
+    width: 50%;
+}
+
+
+#notelogo{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    height: 40px;
+}
+.notebox{
+    padding:20px;
+    height: 300px;
+    width: 230px;
+    background-color:#ffca58;
+    position: absolute;
+    border-radius: 30px;
+    top: 200px;
+    left: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+.notebox p{
+    padding-left: 90px;
+    padding-bottom: 20px;
+}
+
+#textarea1{
+    border-radius: 10px;
+}
+
+#btn1{
+    padding: 8px;
+    border-radius: 10px;
+    border: 0px;
+    width: 200px;
+    position:absolute;
+    top: 280px;
+    left: 30px;
+    background-color: white;
+
+}
+
+.notebox1{
+    padding:20px;
+    height: 300px;
+    width: 250px;
+    background-color:#ffca58;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.notebox1 p{
+    padding-left: 90px;
+    padding-bottom: 20px;
+}
+
+#textarea{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    height: 150px;
+    width: 220px;
+}
+
+#btn{
+    padding: 8px;
+    border-radius: 10px;
+    border: 0px;
+    width: 200px;
+    position:absolute;
+    top: 280px;
+    left: 40px;
+    background-color: white;
+
+}
+
+
+#newdiv{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 190px;
+    left: 420px;
+    width: 1000px;
+    height: auto;
+    margin-left: 30px;
+}
+
+#nothing{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+
+@media only screen and (max-width: 600px) {   
+    #newdiv{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 35px;
+        margin-left: 0px;
+        top: 550px;
+        width: 300px;
+    }
+    .notebox{
+        left: 10%;
+        margin: 10px;
+    }  
+  }

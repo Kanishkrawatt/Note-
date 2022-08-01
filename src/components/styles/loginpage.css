@@ -1,0 +1,37 @@
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.Page {
+  text-align: center;
+  border: 1px solid white;
+  height:55% ;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  background: linear-gradient(45deg,#97C4B8 30%,#CCF3EE 70%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input{
+    padding: 10px;
+    width: 250px;
+    margin:10px 0 10px 0;
+}
+#button{
+    margin-top: 10px;
+    padding: 10px 0px;
+    width: 273px;
+    background-color: white;
+    border:1px solid black;
+    
+}
+
+a{
+    margin-top: 20px;
+}
